@@ -826,7 +826,7 @@ public:
         int subimages = compute_subimages();
         timer.stop();  // suspend timer to avoid double counting reads
         for (int i = 1; i < nimages(); ++i) {
-            if(!m_ir[i]))
+            if(!m_ir[i])
                 return 0;
 
             bool ok = ot.read(m_ir[i]);
